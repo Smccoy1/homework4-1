@@ -1,13 +1,13 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from "@reduxjs/toolkit";
 
 export const delayedSlice = createSlice({
-  name: 'delayed',
+  name: "delayed",
   initialState: {
-      value: '',
+    value: "",
   },
   reducers: {
     storeValue: (state, action) => {
-        console.log(action.payload);
+      console.log(action.payload);
       state.value = action.payload;
     },
   },
